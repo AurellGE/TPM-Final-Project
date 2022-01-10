@@ -18,7 +18,7 @@
     padding: 20px;
     background-color: #EAEAEA;
     border-radius: 26px;
-    top: 6vh;
+    top: 9vh;
 }
 
 .stat-image {
@@ -266,19 +266,32 @@ input {
     width: 100%;
 }
 
-#timeline > div {
+.timeline-left {
+    width: 70%;
+}
+
+#timeline > .timeline-left > div {
     margin-block: 20px;
     background-color: white;
     border-radius: 13px;
 }
 
-#timeline > div > h3 {
+#timeline > .timeline-left > div > h3 {
     background-color: #BFBFBF;
     padding: 10px 20px;
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
 }
 
-#timeline > div > p {
+#timeline > .timeline-left > div > p {
     padding: 10px 20px;
+}
+
+.circle {
+    background-color: white;
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    margin-right: -14.2vw;
+    float: right;
 }

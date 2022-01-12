@@ -9,24 +9,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
-
 </head>
+<style>
+    @font-face {
+    font-family: "monument_extendedultraboldZ";
+    src: url('Fonts/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+         url('Fonts/monumentextended-ultrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+    font-family: "monument_extendedregular";
+    src: url('Fonts/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('Fonts/monumentextended-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+</style>
 <body>
+    <img src="" alt="">
     <div class="left-column">
         <section id="stat">
             <div class="stat-image">
-                <img src="#" alt="">
+                <img src="./Assets/Dashboard Icon/pfp.png" alt="">
             </div>
             <div class="stat-text">
                 <p>Welcome back,</p>
-                <h3 class="stat-name">Steven Nathaniel</h3>
-                <p class="status">Status : Team Leader</p>
+                <h3 class="stat-name">Vaporeon Team</h3>
             </div>
         </section>
         
         <section id="menu">
             <div class="menu-icon">
-                <img src="./Assets/Dashboard Icon/profile.png" alt="">
                 <img src="./Assets/Dashboard Icon/home.png" alt="">
                 <img src="./Assets/Dashboard Icon/announcement.png" alt="">
                 <img src="./Assets/Dashboard Icon/payment.png" alt="">
@@ -34,12 +49,11 @@
                 <img src="./Assets/Dashboard Icon/members.png" alt="">
             </div>
             <div class="menu-text">
-                <h3><a href="#">Profile</a></h3>
                 <h3><a href="#">Home</a></h3>
                 <h3><a href="#">Announcement</a></h3>
                 <h3><a href="#">Payment</a></h3>
                 <h3><a href="#">Schedule</a></h3>
-                <h3><a href="#">Members</a></h3>
+                <h3><a href="#">Team</a></h3>
             </div>
         </section>
     </div> 
@@ -52,52 +66,63 @@
                     <p id="date"></p>
                 </div>
                 <div class="search">
-                    <span> <img src="./Assets/Dashboard Icon/search.png" alt=""> Search name...</span>
+                    <img src="./Assets/Dashboard Icon/search.png" alt=""><input type="text" placeholder="Search name...">
                 </div>
             </div>
         </header>
     
-        <!-- <section id="profile">
-            <h1>Profile</h1>
-            <form action="submit" class="profile-data">
+        <section id="profile">
+            <div class="profile-pic">
+                <h1>Profile Picture</h1>
+                <img src="./Assets/Dashboard Icon/profile-pfp.png" alt="">
+                <h1>UPLOAD</h1>
+                <button>Choose File</button>
+                <p>No file chosen</p>
+                <button>SUBMIT</button>
+            </div>
+            <div class="personal-info">
+                <h1>Personal Information</h1>
                 <div class="name">
                     <label for="name">Full Name</label>
-                    <input type="" placeholder="Please type your full name here...">
+                    <p>Steven Nathaniel</p>
                 </div>
                 <div class="place">
                     <label for="place">Place of Birth</label>
-                    <input type="text" placeholder="Please type your place of birth here...">
-                </div>
-                <div class="date">
-                    <label for="date">Date of Birth</label>
-                    <input type="text" placeholder="Please type your date of birth here...">
-                </div>
-                <div class="team">
-                    <label for="team">Team Name</label>
-                    <input type="text" placeholder="Please type your team name here...">
+                    <p>Jakarta</p>
                 </div>
                 <div class="type">
                     <label for="type">Registration Type</label>
-                    <input type="text" placeholder="Please select your registration type...">
+                    <p>BINUSIAN</p>
                 </div>
+                <div class="date">
+                    <label for="date">Date of Birth</label>
+                    <p>26 Aug 2003 </p>
+                </div>
+                <div class="gender">
+                    <label for="date">Gender</label>
+                    <p>Male</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h1>Contact Information</h1>
                 <div class="email">
                     <label for="email">Email</label>
-                    <input type="text" placeholder="Please type your email here...">
+                    <p>Steven Nathaniel</p>
                 </div>
                 <div class="whatsapp">
                     <label for="whatsapp">Whatsapp</label>
-                    <input type="text" placeholder="Please type your Whatsapp number here...">
+                    <p>0812-2345-293</p>
                 </div>
                 <div class="line">
-                                   <label for="line">LINE ID</label>
-                    <input type="text" placeholder="Please type your LINE ID here...">
+                    <label for="line">LINE ID</label>
+                    <p>StevenN</p>
                 </div>
                 <div class="git">
                     <label for="git">Github/Gitlab</label>
-                    <input type="text" placeholder="Please type ...">
+                    <p>gitHub</p>
                 </div>
-            </form>
-        </section> -->
+            </div>
+        </section>
 
         <!-- <section id="pay-upload">
             <h1>Upload Payment Receipt</h1>
@@ -120,7 +145,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed.</p>
         </section> -->
         
-        <section id="timeline">
+        <!-- <section id="timeline">
             <h1>Timeline</h1>
             <div class="timeline-right">
             </div>
@@ -143,10 +168,11 @@
                 <div class="competition">
                     <div class="circle"></div>
                     <h3>Competition Day</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed. Viverra aliquet consequat consequat congue. Volutpat ac, enim, montes, nullam eget feugiat cras quis sed. Convallis non mattis sociis aliquet viverra arcu. Quam mauris justo condimentum elit faucibus pulvinar adipiscing nulla lectus. Pharetra pellentesque enim elementum vehicula rhoncus, risus elementum. Et et vestibulum faucibus cursus sed est mattis ullamcorper odio. Et, hendrerit nunc neque, feugiat neque elit id vel.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed. Viverra aliquet consequat consequat congue. Volutpat ac, enim, montes, nullam eget feugiat cras quis sed. Convallis non mattis sociis aliquet viverra arcu. Quam mauris justo condimentum elit faucibus pulvinar adipiscing nulla lectus. Pharetra pellentesque enim elementum vehicula rhoncus, risus elementum. Et et vestibulum faucibus cursus sed est mattis ullamcorper odio. Et, hendrerit nunc neque, feugiat neque elit id vel. <br><br><br><br></p>
+                    <div class="competition-link"><a href="#"><span>Join Meeting</span></a></div>
                 </div>
             </div>
-        </section>
+        </section> -->
         
         <div class="contact-person">
             <h3>For more information please kindly contact :</h3>

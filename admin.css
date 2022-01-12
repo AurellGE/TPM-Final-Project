@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: row;
     width: 250px;
-    height: 18vh;
+    height: 100px;
     margin: 50px;
     margin-top: 10px;
     margin-right: 10px;
@@ -36,12 +36,10 @@
 
 .stat-image {
     background-color: white;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 100px;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
+    margin-right: 15px; margin-top: -5px;
 }
 
 .stat-text {
@@ -82,18 +80,16 @@ h3 {
     flex-direction: row;
     justify-content: center;
     width: 250px;
-    height: 63vh;
+    height: 150px;
     margin: 50px;
-    margin-right: 10px;
-    margin-top: -500px;
-    padding: 10px;
+    margin-right: 10px; margin-top: -100px;
+    padding: 20px;
     background-color: #EAEAEA;
     border-radius: 26px;
     top: 28.6vh;
 }
 
 #menu > .menu-text {
-    margin-top: 43px;
     margin-left: 15px;
 }
 
@@ -102,31 +98,25 @@ h3 {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 7vh;
-}
-
-#menu > .menu-text > h3 > .return-text {
-    margin-top: 115px;
+    justify-content: space-around;
+    height: 55px;
+    background-color: gray;
 }
 
 #menu > .menu-icon {
     display: flex;
     flex-direction: column;
-    height: 42vh;
+    justify-content: space-between;
+    height: 110px;
     padding: 10px;
-    margin-top: 20px;
+    margin-block: ;
+    background-color: gray;
 }
 
 #menu > .menu-icon > img {
-    max-height: 25px;
-    max-width: 25px;
-    margin-left: -20px;
-    margin-block: 10px;
-}
-
-#menu > .menu-icon > .return-icon {
-    margin-top: 120px;
+    max-height: 20px;
+    max-width: 20px;
+    /* margin-left: -20px; */
 }
 
 body {

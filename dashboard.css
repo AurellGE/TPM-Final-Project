@@ -159,6 +159,7 @@ header > .header-top {
     margin-block: auto;
     padding: 7px 5px;
     border: none;
+    outline: none;
 }
 
 .search > img {
@@ -474,10 +475,12 @@ label {
     flex-direction: row;
 }
 
-.team-members > div > img {
+/* /.team-members > div > a > */
+
+.team-members > div > a > img {
     height: 40px;
-    margin-block: auto;
-    margin-left: 30%;
+    margin-block: 70%;
+    margin-left: 90%;
 }
 
 .team-members > div > div > img {

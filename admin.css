@@ -7,9 +7,14 @@
     color: black;
 }
 
+body {
+    /* display: flex;
+    flex-direction: row; */
+}
+
 .left-column {
+    /* flex: 1; */
     position: sticky;
-    width: 100%;
 }
 
 .left-column > h1 {
@@ -18,7 +23,6 @@
     margin-top: 10px;
     top: 10px;
 }
-
 #stat {
     position: sticky;
     display: flex;
@@ -26,12 +30,11 @@
     width: 250px;
     height: 100px;
     margin: 50px;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 10px; margin-right: 10px; margin-bottom: 15px;
     padding: 20px;
     background-color: #EAEAEA;
     border-radius: 26px;
-    top: 58px;
+    top: 10.5vh;
 }
 
 .stat-image {
@@ -82,11 +85,11 @@ h3 {
     width: 250px;
     height: 150px;
     margin: 50px;
-    margin-right: 10px; margin-top: -100px;
+    margin-right: 10px; margin-top: 0px;
     padding: 20px;
     background-color: #EAEAEA;
     border-radius: 26px;
-    top: 28.6vh;
+    top: 31vh;
 }
 
 #menu > .menu-text {
@@ -100,17 +103,14 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     height: 55px;
-    background-color: gray;
 }
 
 #menu > .menu-icon {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 110px;
-    padding: 10px;
-    margin-block: ;
-    background-color: gray;
+    padding: 3px;
 }
 
 #menu > .menu-icon > img {
@@ -128,11 +128,14 @@ body > div {
 }
 
 .center-column {
-    width: 100%;
+    margin-inline: 0;
+    margin-block: 43px;
+    padding: 15px;
+}
+
+#dashboard {
     background-color: #EAEAEA;
     border-radius: 26px;
-    margin-inline: -250px;
-    margin-block: 50px;
     padding: 15px;
 }
 

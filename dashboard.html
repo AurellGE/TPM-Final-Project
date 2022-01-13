@@ -13,22 +13,21 @@
 <style>
     @font-face {
     font-family: "monument_extendedultraboldZ";
-    src: url('Fonts/monumentextended-ultrabold-webfont.woff2') format('woff2'),
-         url('Fonts/monumentextended-ultrabold-webfont.woff') format('woff');
+    src: url('Fonts/Monument/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+         url('Fonts/Monument/monumentextended-ultrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     }
 
     @font-face {
     font-family: "monument_extendedregular";
-    src: url('Fonts/monumentextended-regular-webfont.woff2') format('woff2'),
-         url('Fonts/monumentextended-regular-webfont.woff') format('woff');
+    src: url('Fonts/Monument/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('Fonts/Monument/monumentextended-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     }
 </style>
 <body>
-    <img src="" alt="">
     <div class="left-column">
         <section id="stat">
             <div class="stat-image">
@@ -153,14 +152,15 @@
             </div>
         </section> -->
 
-        <!-- <section id="pay-upload">
+        <section id="pay-upload">
             <h1>Upload Payment Receipt</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed. Viverra aliquet consequat consequat congue. Volutpat act.</p>
             <div class="upload-receipt">
+                <input type="file" src="./Assets/Dashboard Icon/upload.png" id="receipt" accept="image/png, image/gif, image/jpeg, application/pdf" onchange="validateFileType()">
                 <img src="./Assets/Dashboard Icon/upload.png" alt="">
                 <p>Upload or drag file from your device</p>
             </div>
-        </section> -->
+        </section>
 
         <!-- <section id="pay-verified">
             <img src="./Assets/Dashboard Icon/verified.png" alt="">
@@ -174,27 +174,23 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed.</p>
         </section> -->
         
-        <section id="timeline">
+        <!-- <section id="timeline">
             <h1>Timeline</h1>
             <div>
                 <div class="timeline-left">
                     <div class="open">
-                        <!-- <div class="circle"></div> -->
                         <h3>Open Registration</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed. Viverra aliquet consequat consequat congue. Volutpat ac, enim, montes, nullam eget feugiat cras quis sed. Convallis non mattis sociis aliquet viverra arcu. Quam mauris justo condimentum elit faucibus pulvinar adipiscing nulla lectus. Pharetra pellentesque enim elementum vehicula rhoncus, risus elementum. Et et vestibulum faucibus cursus sed est mattis ullamcorper odio. Et, hendrerit nunc neque, feugiat neque elit id vel.</p>
                     </div>
                     <div class="close">
-                        <!-- <div class="circle"></div> -->
                         <h3>Close Registration</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed. Viverra aliquet consequat consequat congue. Volutpat ac, enim, montes, nullam eget feugiat cras quis sed. Convallis non mattis sociis aliquet viverra arcu. Quam mauris justo condimentum elit faucibus pulvinar adipiscing nulla lectus. Pharetra pellentesque enim elementum vehicula rhoncus, risus elementum. Et et vestibulum faucibus cursus sed est mattis ullamcorper odio. Et, hendrerit nunc neque, feugiat neque elit id vel.</p>
                     </div>
                     <div class="technical">
-                        <!-- <div class="circle"></div> -->
                         <h3>Technical Meeting</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed. Viverra aliquet consequat consequat congue. Volutpat ac, enim, montes, nullam eget feugiat cras quis sed. Convallis non mattis sociis aliquet viverra arcu. Quam mauris justo condimentum elit faucibus pulvinar adipiscing nulla lectus. Pharetra pellentesque enim elementum vehicula rhoncus, risus elementum. Et et vestibulum faucibus cursus sed est mattis ullamcorper odio. Et, hendrerit nunc neque, feugiat neque elit id vel.</p>
                     </div>
                     <div class="competition">
-                        <!-- <div class="circle"></div> -->
                         <h3>Competition Day</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed. Viverra aliquet consequat consequat congue. Volutpat ac, enim, montes, nullam eget feugiat cras quis sed. Convallis non mattis sociis aliquet viverra arcu. Quam mauris justo condimentum elit faucibus pulvinar adipiscing nulla lectus. Pharetra pellentesque enim elementum vehicula rhoncus, risus elementum. Et et vestibulum faucibus cursus sed est mattis ullamcorper odio. Et, hendrerit nunc neque, feugiat neque elit id vel. <br><br><br><br></p>
                         <div class="competition-link"><a href="#"><span>Join Meeting</span></a></div>
@@ -204,9 +200,9 @@
                     <img src="./Assets/Dashboard Icon/timeline-graph.png" alt="">
                 </div>
             </div>
-        </section>
+        </section> -->
         
-        <!-- <section id="team">
+        <section id="team">
             <h1>Vaporeon's Team Member</h1>
             <img src="./Assets/Dashboard Icon/line_.png" alt="">
             <div class="team-members">
@@ -218,7 +214,7 @@
                         <h3>Steven Nathaniel</h3>
                         <h3>Team Leader</h3>
                     </div>
-                    <img src="./Assets/Dashboard Icon/ellipse-arrow.png" alt="">
+                    <a href="#"><img src="./Assets/Dashboard Icon/ellipse-arrow.png" alt=""></a>
                 </div>
                 <div class="member-2">
                     <div>
@@ -228,7 +224,7 @@
                         <h3>Aurellia Gita Elysia</h3>
                         <h3>Team Member</h3>
                     </div>
-                    <img src="./Assets/Dashboard Icon/ellipse-arrow.png" alt="">
+                    <a href="#"><img src="./Assets/Dashboard Icon/ellipse-arrow.png" alt=""></a>
                 </div>
                 <div class="member-3">
                     <div>
@@ -238,10 +234,10 @@
                         <h3></h3>
                         <h3>Add Member</h3>
                     </div>
-                    <img src="./Assets/Dashboard Icon/ellipse-add.png" alt="">
+                    <a href="#"><img src="./Assets/Dashboard Icon/ellipse-add.png" alt=""></a>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <div class="contact-person">
             <h3>For more information please kindly contact :</h3>

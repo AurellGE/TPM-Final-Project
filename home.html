@@ -10,32 +10,78 @@
 <style>
     @font-face {
     font-family: "monument_extendedultraboldZ";
-    src: url('Fonts/monumentextended-ultrabold-webfont.woff2') format('woff2'),
-         url('Fonts/monumentextended-ultrabold-webfont.woff') format('woff');
+    src: url('Fonts/Monument/monumentextended-ultrabold-webfont.woff2') format('woff2'),
+         url('Fonts/Monument/monumentextended-ultrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     }
 
     @font-face {
     font-family: "monument_extendedregular";
-    src: url('Fonts/monumentextended-regular-webfont.woff2') format('woff2'),
-         url('Fonts/monumentextended-regular-webfont.woff') format('woff');
+    src: url('Fonts/Monument/monumentextended-regular-webfont.woff2') format('woff2'),
+         url('Fonts/Monument/monumentextended-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    }
+
+    @font-face {
+    font-family: 'metropolisbold';
+    src: url('Fonts/Monument/metropolis.bold-webfont.woff2') format('woff2'),
+         url('Fonts/Monument/metropolis.bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'metropolissemi_bold';
+        src: url('Fonts/Monument/metropolis.semi-bold-webfont.woff2') format('woff2'),
+            url('Fonts/Monument/metropolis.semi-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: 'metropolismedium';
+        src: url('Fonts/Monument/metropolis.medium-webfont.woff2') format('woff2'),
+            url('Fonts/Monument/metropolis.medium-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: 'metropolisregular';
+        src: url('Fonts/Monument/metropolis.regular-webfont.woff2') format('woff2'),
+            url('Fonts/Monument/metropolis.regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
     }
 </style>
 <body>
     <nav>
-        <h3>Hackathon 5.0</h3>
+        <a href="#home"><h3>Hackathon 5.0</h3></a>
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
+            <!-- <li><a href="#home">Home</a></li> -->
             <li><a href="#about">About</a></li>
+            <li><a href="#mentor">Mentor &  Jury</a></li>
             <li><a href="#timeline">Timeline</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="#mentor">Mentor &  Jury</a></li>
             <li><a class="nav-signup" href="#signup">Sign In</a></li>
         </ul>
     </nav>
+
+    <!-- <nav>
+        <h3>Hackathon 5.0</h3>
+        <ul class="navbar">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mentor">Mentor &  Jury</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a class="nav-signup" href="#signup">Log out</a></li>
+        </ul>
+    </nav> -->
 
     <section id="home">
         <div class="home-box">
@@ -43,7 +89,7 @@
         </div>
         <div class="home-right">
             <h1><span class="title">HACKATHON?</span></h1>
-            <p>Lörem ipsum intraliga misk. Sor homokompetens läling.</p>
+            <p>Hackathon 5.0 is a 48-hour online coding competition where each team competes to create innovative applications or websites that could solve problems. This year is the 5th time Binus Computer Club (BNCC) held a Hackathon event.</p>
             <div class="orange-button"><a href="#"><span><img src="./Assets/Home/arrow.png" alt=""> Let's Talk!</span></a></div>
         </div>
     </section>
@@ -62,10 +108,14 @@
             </div>
         </div>
     </section>
+
+    <section id="video">
+        <video src="./Assets/Home/video-recap.mp4" autoplay></video>
+    </section>
     
     <section id="champion">
         <h1>CHAMPION PRIZE</h1>
-        <div><span>Prize Pool Rp 8.000.000</span></div>
+        <div><span class="prize-pool">Prize Pool Rp 8.000.000</span></div>
         <div class="juara">
             <div class="juara23">
                 <div class="box-juara">

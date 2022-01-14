@@ -256,6 +256,37 @@ body {
     margin-bottom: -15px; margin-left: -35px;
 }
 
+.test {
+    background-color: white;
+    border-radius: 26px;
+    padding: 20px 0px 10px 30px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.team-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.verif {
+    margin-left: 53%;
+}
+
+.test > div > h1, span {
+    font-size: 18px;
+    padding-inline: 5px;
+}
+
+.delete {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.delete > img {
+    margin-left: 80%;
+}
+
 ._line_ {
     margin-block: 15px;
 }
@@ -269,9 +300,7 @@ body {
     border-radius: 13px;
     width: 95%; height: 112px;
     padding-block: 10px; padding-inline: 30px;
-    margin-top: 30px;
-    margin: 20px;
-    margin-left: 0;
+    margin-top: 30px; margin: 20px; margin-left: 0;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -279,14 +308,25 @@ body {
 
 .team-members > div > a {
     width: 100%;
-    background-color: gray;
+    /* background-color: gray; */
 }
 
-.team-members > div > a > button > img {
+.team-members > div > a > img {
     height: 40px;
     margin-block: 4vh;
     margin-left: 90%;
-    background-color: black;
+}
+
+.team-members > div > button {
+    width: 100%;
+}
+
+.team-members > div > button > img {
+    height: 35px;
+    margin-block: 4vh;
+    margin-left: 90%;
+    border-radius: 100px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .team-members > div > div > img {
@@ -321,33 +361,76 @@ body {
 }
 
 #pay-popup {
-    background-color: #EAEAEA;
+    display: flex;
+    top: 0;
+    margin: 8% 15%;
+    position: fixed;
+    border-radius: 26px;
+    height: 450px; width: 450px;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.pay-popup2 {
     display: flex;
     flex-direction: column;
-    height: 70vh; width: 50%;
-    padding: 50px 60px;
     border-radius: 26px;
 }
 
+.receipt-popup {
+    display: none;
+    z-index: 10;
+}
+
 .receipt > img {
-    height: 50%;
+    height: 350px;
+    margin: 10px; margin-left: 42px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border-radius: 26px;
 }
 
-#pay-popup > img {
+.pay-popup2 > img {
+    margin-top: 20px; margin-left: 400px;
     height: 20px; width: 20px;
 }
 
-#pay-popup > img:hover {
+#pay-popup > div > img:hover {
     cursor: pointer;
 }
 
 #pay-popup button {
     border: none;
     background-color: transparent;
+}
+
+.acc {
+    display: flex;
+    flex-direction: row;
+    margin-left: 325px;
+}
+
+.acc > button > img {
+    padding-inline: 10px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+.pay-success {
+    background-color: white;
+    border-radius: 26px;
+    padding: 65px;
+    padding-inline: 40px;
+    width: 95%;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    border-bottom-right-radius: 26px; border-bottom-left-radius: 26px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pay-success > p {
+    margin-inline: 220px;
 }
 
 

@@ -30,14 +30,128 @@
                 <img src="./Assets/Dashboard Icon/payment.png" alt="">
             </div>
             <div class="menu-text">
-                <h3><a href="#">Participants</a></h3>
+                <h3><a href="#">Team</a></h3>
                 <h3><a href="#">Payment</a></h3>
             </div>
         </section>
     </div>
 
     <div class="center-column">
-        <section id="dashboard">
+        <header>
+            <div class="header-top">
+                <div class="header-date">
+                    <h3>Dashboard</h3>
+                    <p id="date"></p>
+                </div>
+                <div class="header-feat">
+                    <div class="search">
+                        <img src="./Assets/Dashboard Icon/search.png" alt=""><input type="text" placeholder="Search team or name...">
+                    </div>
+                    <div class="sort dropbtn">
+                        <button class="dropdown">
+                            <span class="iconify-inline" data-icon="bx:bx-sort"></span>
+                            <span>Sort by</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="a-z"><button><span class="iconify-inline" data-icon="akar-icons:arrow-down" style="color: black;"></span>
+                                <span>A to Z</span></button></li>
+                            <li class="z-a"><button><span class="iconify-inline" data-icon="akar-icons:arrow-up" style="color: black;"></span>
+                                <span>Z to A</span></button></li>
+                        </ul>
+                    </div>
+                    <div class="filter dropbtn">
+                        <button class="dropdown">
+                            <span class="iconify-inline" data-icon="bx:bx-filter-alt" style="color: black;"></span>
+                            <span>Filter</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="a-z"><button><span class="iconify-inline" data-icon="akar-icons:square-fill" style="color: white;"></span>
+                                <span>BINUSIAN</span></button></li>
+                            <li class="a-z"><button><span class="iconify-inline" data-icon="akar-icons:square-fill" style="color: #4e9a9e;"></span>
+                                <span>Non-BINUSIAN</span></button></li>
+                            <li class="a-z"><button><span class="iconify-inline" data-icon="akar-icons:square-fill" style="color: #4e9a9e;"></span>
+                                <span>Verified</span></button></li>
+                            <li class="a-z"><button><span class="iconify-inline" data-icon="akar-icons:square-fill" style="color: white;"></span>
+                                <span>Waiting Approval</span></button></li>
+                            <li class="a-z"><button><span class="iconify-inline" data-icon="akar-icons:square-fill" style="color: white;"></span>
+                                <span>Unverified</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <br><br>
+        <div>
+            <!-- <section id="team">
+                <h1>Team List</h1>
+                <img class="_line_" src="./Assets/Dashboard Icon/line_.png" alt="">
+                <div class="team-members">
+                    <div class="member-1">
+                        <div>
+                            <img src="./Assets/Dashboard Icon/profile-pfp.png" alt="">
+                        </div>
+                        <div class="member-text">
+                            <h3>Vaporeon</h3>
+                            <h3>Leader : Steven Nathaniel</h3>
+                        </div>
+                        <a href="#"><img src="./Assets/Dashboard Icon/ellipse-arrow.png" alt=""></a>
+                    </div>
+                    <div class="member-2">
+                        <div>
+                            <img src="./Assets/Dashboard Icon/pfp-female.png" alt="">
+                        </div>
+                        <div class="member-text">
+                            <h3>Brooklyn Visions</h3>
+                            <h3>Leader : Miles Morales</h3>
+                        </div>
+                        <a href="#"><img src="./Assets/Dashboard Icon/ellipse-arrow.png" alt=""></a>
+                    </div>
+                    <div class="member-3">
+                        <div>
+                            <img src="./Assets/Dashboard Icon/ellipse.png" alt="">
+                        </div>
+                        <div class="member-text">
+                            <h3>Empire State University</h3>
+                            <h3>Leader : John Xina</h3>
+                        </div>
+                        <a href="#"><img src="./Assets/Dashboard Icon/ellipse-arrow.png" alt=""></a>
+                    </div>
+                </div> 
+            </section> -->
+
+            <section id="payment">
+                <section id="team">
+                    <h1>Approval List</h1>
+                    <img class="_line_" src="./Assets/Dashboard Icon/line_.png" alt="">
+                    <div class="team-members">
+                        <div class="member-1">
+                            <div>
+                                <img src="./Assets/Dashboard Icon/profile-pfp.png" alt="">
+                            </div>
+                            <div class="member-text">
+                                <h3>china #1</h3>
+                                <h3>Leader : John Xina</h3>
+                            </div>
+                            <a href="#"><button onclick="openForm()"><img src="./Assets/Dashboard Icon/view.png" alt=""></button></a>
+                        </div>
+                        <div class="member-2">
+                            <div>
+                                <img src="./Assets/Dashboard Icon/pfp-female.png" alt="">
+                            </div>
+                            <div class="member-text">
+                                <h3>Brooklyn Visions</h3>
+                                <h3>Leader : Miles Morales</h3>
+                            </div>
+                            <a href="#"><button onclick="openForm()"><img src="./Assets/Dashboard Icon/view.png" alt=""></button></a>
+                        </div>
+                    </div> 
+                </section>
+            </section>
+        </div>
+        
+        
+        <!-- <section id="dashboard">
             <div class="edited">
                 <h3>Last Edited :</h3>
                 <div></div>
@@ -97,12 +211,10 @@
                     </div>
                 </div>
             </div>
-        </section>
-
-
+        </section> -->
     </div>
      
-    <div class="right-column">
+    <!-- <div class="right-column">
         <section id="total-member">
             <div>
                 <h1>TOTAL</h1>
@@ -112,6 +224,10 @@
                 <h1>:90</h1>
             </div>
         </section>
-    </div>
+    </div> -->
+
+    <script src="./dashboard.js"></script>
+    <script src="./form-popup.js"></script>
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
 </body>
 </html>

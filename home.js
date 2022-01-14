@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
        if (isValid()) {
            let usr = new User(name.value, email.value, subject.value, message.value);
 
-           alert(`${usr.name} Thanks for the message.`)
+           alert(`Thanks for the message.`)
 
        } else {
            alert("There was an error")

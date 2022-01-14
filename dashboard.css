@@ -7,11 +7,9 @@
     color: black;
 }
 
-/* .bg {
-    position: absolute;
-    z-index: -10;
-    opacity: 100%;
-} */
+button:hover {
+    cursor: pointer;
+}
 
 body {
     background-image: url(./Assets/Background/testp.png);
@@ -265,7 +263,12 @@ label {
 
 .info-left {
     margin-left: 40px;
-    width: 30%;
+    width: 200px;
+}
+
+.info-left > div {
+    display: flex;
+    flex-direction: column;
 }
 
 .info > div > div {
@@ -274,8 +277,54 @@ label {
 
 input {
     font-size: 10px;
-    width: 80%;
+    /* width: 80%; */
     outline: none;
+    margin-top: 5px;
+}
+
+.type > form {
+    display: flex;
+    flex-direction: row;
+}
+
+.type > form > label {
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 5px; margin-top: 2px;
+    width: 100%;
+}
+
+.info-right {
+    margin-left: 50px;
+}
+
+.info-right > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-button {
+    display: flex;
+    justify-content: center;
+}
+
+.info-button button {
+    border: none;
+    border-radius: 13px;
+    padding: 3px 20px;
+    margin-inline: auto; margin-top: 20px;
+}
+
+.gender > form {
+    display: flex;
+    flex-direction: row;
+}
+
+.gender > form > label{
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 5px; margin-top: 2px;
+    padding-right: 50px;
 }
 
 .contact-person {

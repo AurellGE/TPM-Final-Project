@@ -54,14 +54,14 @@ nav > ul > li > .nav-signup {
 .home-box > img {
   position: absolute;
   margin: 10%;
-  height: 60%;
+  height: 30vw;
   border-radius: 42px;
 }
 
 .home-right {
   position: absolute;
   margin-top: 17%;
-  margin-left: 48%;
+  margin-left: 52vw;
 }
 
 .home-right > p {
@@ -123,12 +123,6 @@ h1 > span {
   background-color: black;
 }
 
-video {
-  width: 70%;
-  display: block;
-  margin: auto;
-}
-
 #about {
   height: 100vh;
 }
@@ -151,16 +145,35 @@ video {
 
 .about-box > img {
   position: absolute;
-  margin-left: 31%;
-  margin-top: -13%;
-  height: 40vh;
+  margin-left: 25%;
+  margin-top: -15%;
+  height: 20vw;
   border-radius: 42px;
   border: 1px solid white;
 }
 
 .about-box > .about-1 {
-  margin-left: 28%;
-  margin-top: -15%;
+  margin-left: 23%;
+  margin-top: -17%;
+}
+
+#video {
+  height: 100vh;
+  margin-top: 60px;
+}
+
+#video > h3 {
+  font-family: "monument_extendedultraboldZ";
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+video {
+  width: 60%;
+  display: block;
+  margin: auto;
+  border-radius: 70px;
 }
 
 #champion {
@@ -194,9 +207,15 @@ video {
   animation: glow-green 1s ease-in-out infinite alternate;
 }
 
+.place-juara {
+  -webkit-animation: glow-green 1s ease-in-out infinite alternate;
+  -moz-animation: glow-green 1s ease-in-out infinite alternate;
+  animation: glow-green 1s ease-in-out infinite alternate;
+}
+
 @-webkit-keyframes glow-green {
   from {
-    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #61d49c, 0 0 25px #61d49c, 0 0 30px #61d49c, 0 0 45px #61d49c, 0 0 50px #61d49c;
+    text-shadow: 0 0 0px #fff, 0 0 15px #fff, 0 0 20px #61d49c, 0 0 25px #61d49c, 0 0 30px #61d49c, 0 0 45px #61d49c, 0 0 50px #61d49c;
   }
   
   to {
@@ -282,6 +301,19 @@ video {
 
 .join-title > h1 > span {
   padding: 0px 20px;
+  -webkit-animation: glow-white 1s ease-in-out infinite alternate;
+  -moz-animation: glow-white 1s ease-in-out infinite alternate;
+  animation: glow-white 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow-white {
+  from {
+    text-shadow: 0 0 0px black, 0 0 15px black, 0 0 20px black, 0 0 25px black, 0 0 30px black, 0 0 45px black, 0 0 50px black;
+  }
+  
+  to {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 25px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.4), 0 0 45px rgba(255, 255, 255, 0.4), 0 0 50px rgba(255, 255, 255, 0.4), 0 0 55px rgba(255, 255, 255, 0.4);
+  }
 }
 
 .join-content {

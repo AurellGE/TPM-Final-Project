@@ -70,7 +70,7 @@
             </div>
         </header>
     
-        <!-- <section id="profile">
+        <section id="profile">
             <div class="profile-pic">
                 <h1>Profile Picture</h1>
                 <div class="profile-line">
@@ -80,14 +80,13 @@
                     <div>
                         <img src="./Assets/Dashboard Icon/profile-pfp.png" alt="">
                     </div>
-                    <div class="profile-upload">
+                    <!-- <div class="profile-upload">
                         <h1>UPLOAD</h1>
                         <div>
-                            <button class="choose">Choose File</button>
-                            <p>No file chosen</p>
+                            <input type="file" >
                         </div>
                         <button class="submit">SUBMIT</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="personal-info">
@@ -150,15 +149,20 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section id="pay-upload">
             <h1>Upload Payment Receipt</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl convallis morbi elit eu luctus sed. Viverra aliquet consequat consequat congue. Volutpat act.</p>
             <div class="upload-receipt">
-                <input type="file" src="./Assets/Dashboard Icon/upload.png" id="receipt" accept="image/png, image/gif, image/jpeg, application/pdf" onchange="validateFileType()">
-                <img src="./Assets/Dashboard Icon/upload.png" alt="">
+                <label for="upload">
+                    <img class="upload-img" src="./Assets/Dashboard Icon/upload.png" alt="">
+    
+                </label>
+                <input class="upload-input" id="upload" type="file" src="./Assets/Dashboard Icon/upload.png" id="receipt" accept="image/png, image/gif, image/jpeg, application/pdf" onchange="validateFileType()">
                 <p>Upload or drag file from your device</p>
+            </div>
+            <div>
             </div>
         </section>
 
@@ -202,7 +206,7 @@
             </div>
         </section> -->
         
-        <section id="team">
+        <!-- <section id="team">
             <h1>Vaporeon's Team Member</h1>
             <img src="./Assets/Dashboard Icon/line_.png" alt="">
             <div class="team-members">
@@ -237,7 +241,7 @@
                     <a href="#"><img src="./Assets/Dashboard Icon/ellipse-add.png" alt=""></a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <div class="contact-person">
             <h3>For more information please kindly contact :</h3>

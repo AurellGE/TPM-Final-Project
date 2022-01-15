@@ -9,6 +9,31 @@
 
 body {
     display: flex;
+    background-image: url(./Assets/Background/admin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-bubble {
+    height: 100%;
+    position: absolute;
+    right: 0;margin-top: -100px;
+    animation: jump 1.2s linear alternate infinite;
+}
+
+@keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5%);
+    }
+    100% {
+      transform: translateY(10%);
+    }
+  }
+  
+.arrowIMG {
 }
 
 .left-column > h1 {
@@ -453,8 +478,8 @@ body {
     width: 50%; margin-inline: auto;
 }
 
-#participant {
-    width: 100%;
+.part-left {
+    width: 60%;
     background-color: white;
     border-radius: 26px; 
     margin-left: 5px;
@@ -511,7 +536,7 @@ input {
 }
 
 .part-left > div > div {
-    width: 475px;
+    /* width: 100%; */
 }
 
 .part-right {

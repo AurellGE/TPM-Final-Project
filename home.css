@@ -8,6 +8,40 @@
   /* background-color: rgb(198, 241, 241); */
 }
 
+body {
+  background-image: url(./Assets/Background/home-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.bubble {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-bubble {
+  /* height: 100%; */
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  top: 0; left: 0;
+  animation: jump 1.2s linear alternate infinite;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(60px);
+  }
+}
+}
+
 p {
   font-size: 14px;
 }
@@ -149,7 +183,7 @@ h1 > span {
   flex-direction: row;
   justify-content: center;
   border-radius: 26px;
-  margin-top: 8%;
+  margin-top: 4%;
   flex-grow: 1;
 }
 
@@ -198,7 +232,7 @@ button:hover {
 }
 
 .talk-right {
-  background-color: #eaeaea;
+  background-color: white;
   border-top-right-radius: 26px; border-bottom-right-radius: 26px;
   padding: 30px;
 }
@@ -233,7 +267,7 @@ input, textarea {
 }
 
 #about {
-  height: 100vh;
+  height: 110vh;
 }
 
 #about > div > h2 {
@@ -311,6 +345,7 @@ video {
 }
 
 .prize-pool {
+  margin-top: 10px;
   -webkit-animation: glow-green 1s ease-in-out infinite alternate;
   -moz-animation: glow-green 1s ease-in-out infinite alternate;
   animation: glow-green 1s ease-in-out infinite alternate;

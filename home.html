@@ -65,6 +65,9 @@
     }
 </style>
 <body>
+    <div class="bubble">
+        <img class="bg-bubble" src="./Assets/Background/home-bubble2.png" alt="">
+    </div>
     <nav>
         <a href="#home"><h3>Hackathon 5.0</h3></a>
         <ul class="navbar">
@@ -76,18 +79,6 @@
             <li><a class="nav-signup" href="#signup">Sign In</a></li>
         </ul>
     </nav>
-
-    <!-- <nav>
-        <h3>Hackathon 5.0</h3>
-        <ul class="navbar">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#mentor">Mentor &  Jury</a></li>
-            <li><a href="#timeline">Timeline</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a class="nav-signup" href="#signup">Log out</a></li>
-        </ul>
-    </nav> -->
 
     <section id="home">
         <div class="home-box">
@@ -315,6 +306,7 @@
     </section>
 
     <!-- Timeline Section -->
+    <section id="timeline">
     <section class="timeline section">
         <div class="container">
             <div class="container-items">
@@ -394,6 +386,7 @@
                 </div>
             </div>
         </div>
+    </section>
     </section>
 
 
@@ -543,7 +536,7 @@
     <section class='section media-partner'>
         <div class="container">
             <div class="container-item display-table">
-                <h1>Media Partner</h1>
+                <h1 class="h1">Media Partner</h1>
                 <div class="display-table-row animated-section">
                     <div class="display-table-cell picture">
                         <img src='./assets tif/mediaPartner/page1/medpar1.png'>
@@ -624,7 +617,7 @@
                         <h1>Contact Us Now!</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cum quas minus. Quae ipsam quos, omnis</p>
                     </div>
-                    <button class='btn'>Let's Talk!!</button>
+                    <div class="orange-button"><a href="#"><button onclick="openForm()"><img src="./Assets/Home/arrow.png" alt=""> Let's Talk!</button></a></div>
                 </div>
 
                 <div class="picture">

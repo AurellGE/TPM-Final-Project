@@ -26,7 +26,20 @@ body {
   z-index: -10;
   width: 100%;
   top: 0; left: 0;
+}
+
+.bg-1 {
+  animation: jump 1.5s linear alternate infinite;
+}
+
+.bg-2 {
+  margin-top: 400px;
   animation: jump 1.2s linear alternate infinite;
+}
+
+.bg-3 {
+  margin-top: 300px; margin-left: -50px;
+  animation: jump 1.7s linear alternate infinite;
 }
 
 @keyframes jump {
@@ -510,7 +523,7 @@ video {
   padding: 25px;
 }
 
-.mentor-design {
+.design {
   width: 70%;
   margin-inline: auto;
   display: flex;
@@ -518,15 +531,15 @@ video {
   text-align: center;
 }
 
-#mentor > .mentor-design {
+.design {
   margin-top: 30px; margin-inline: auto;
 }
 
-.mentor-design > div > img {
+.design > div > img {
   height: 250px; width: 250px;
 }
 
-.mentor-design > .design1 > img {
+.design > .design1 > img {
   margin-right: -35px;
 }
 
@@ -536,7 +549,7 @@ video {
   text-align: center;
 } */
 
-.mentor-design > div > div {
+.design > div > div {
   position: relative;
   width: 130px;
   background-color: black;
@@ -572,4 +585,8 @@ video {
 
 #jury > h1 {
   text-align: center;
+}
+
+.technology, .business {
+  display: none;
 }

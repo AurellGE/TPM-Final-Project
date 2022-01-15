@@ -101,8 +101,11 @@
                         </div>
                         <div>
                             <div class="info-button">
-                                <button>VIEW CV</button>
-                                <button>VIEW FLAZZ</button>
+                                <button><label for="upload-cv">CV</label></button>
+                                <input class="upload-input" type="file" style="visibility: hidden;" id="upload-cv" accept="image/png, image/gif, image/jpeg, application/pdf" onchange="validateFileType()">
+
+                                <input class="upload-input" id="upload-flazz" type="file" id="upload-flazz" accept="image/png, image/gif, image/jpeg, application/pdf" onchange="validateFileType()">
+                                <button><label for="upload-flazz">Flazz</label></button>
                             </div>
                             <div class="info-button">
                                 <button type="submit">SUBMIT</button>
@@ -113,5 +116,7 @@
             </div>
         </section>
     </form>
+
+    <script src="./dashboard.js"></script>
 </body>
 </html>

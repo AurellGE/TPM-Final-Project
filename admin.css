@@ -474,11 +474,15 @@ input {
     padding-block: 3px;
     background-color: #C4C4C4;
     border: none; border-radius: 7px;
-    margin-bottom: 15px; margin-right: 15px;
+    margin-block: 10px; margin-right: 15px;
 }
 
 #participant label, p {
     font-size: 12px;
+}
+
+.edit-submit {
+
 }
 
 #participant > div {

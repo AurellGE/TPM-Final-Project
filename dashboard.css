@@ -11,6 +11,10 @@ button:hover {
     cursor: pointer;
 }
 
+label:hover {
+    cursor: pointer;
+}
+
 body {
     background-image: url(./Assets/Background/testp.png);
     background-size: cover;

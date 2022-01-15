@@ -282,12 +282,12 @@ input {
     margin-top: 5px;
 }
 
-.type > form {
+.type > div {
     display: flex;
     flex-direction: row;
 }
 
-.type > form > label {
+.type > div > label {
     font-size: 12px;
     font-weight: 400;
     margin-left: 5px; margin-top: 2px;
@@ -303,24 +303,20 @@ input {
     flex-direction: column;
 }
 
-.info-button {
-    display: flex;
-    justify-content: center;
-}
-
 .info-button button {
     border: none;
     border-radius: 13px;
     padding: 3px 20px;
-    margin-inline: auto; margin-top: 20px;
+    margin-top: 70px;
+    width: 90px;
 }
 
-.gender > form {
+.gender > div {
     display: flex;
     flex-direction: row;
 }
 
-.gender > form > label{
+.gender > div > label{
     font-size: 12px;
     font-weight: 400;
     margin-left: 5px; margin-top: 2px;

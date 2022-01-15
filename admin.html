@@ -242,20 +242,16 @@
                             <input type="text" name="team" id="">
                         </div>
                         <div>
+                            <img class="square-delete" src="./Assets/Dashboard Icon/square-img.png" alt="">
+                            <img class="delete" src="./Assets/Dashboard Icon/delete.png" alt="">
+
                             <label for="date">Date of Birth :</label>
                             <input type="text" name="date" id="date">
             
-                            <label for="team">Team :</label>
-                            <input type="text" name="team" id="">
-            
                             <label for="type">Reg Type :</label>
                             <input type="text" name="type" id="type">
-            
-                            <label for="role">Role :</label>
-                            <input type="text" name="role" id="role">
                         </div>
                         <div>
-                            <img class="delete" src="./Assets/Dashboard Icon/delete.png" alt="">
                         </div>
                     </div>
                     <br>
@@ -276,14 +272,18 @@
                             <input type="text" name="git" id="git">
                         </div>
                     </div>
-                    <div>
-                        <button>VIEW CV</button>
-                        <button>VIEW FLAZZ</button>
-                    </div>
-                    <label for="edit-docs">Accept this changes?</label>
-                    <div>
-                        <button class="edit-submit" type="submit">SUBMIT</button>
-                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="buttons-b"><label for="upload-cv">CV</label></button>
+                    <button class="buttons-b"><label for="upload-flazz">Flazz</label></button>
+
+                    <input class="upload-input" type="file" style="visibility: hidden;" id="upload-cv" accept="image/png, image/gif, image/jpeg, application/pdf" onchange="validateFileType()">
+                    <input class="upload-input" type="file" style="visibility: hidden;" id="upload-flazz" accept="image/png, image/gif, image/jpeg, application/pdf" onchange="validateFileType()">
+                    
+                </div>
+                <label for="edit-docs">Accept this changes?</label>
+                <div>
+                    <button class="edit-submit" type="submit">SUBMIT</button>
                 </div>
             </div>
             
@@ -308,7 +308,7 @@
                     </div>
                     <div class="team-info">
                         <div>
-                            <span>1</span>
+                            <span>2</span>
                         </div>
                         <div>
                             <img src="./Assets/Dashboard Icon/square-img.png" alt="">

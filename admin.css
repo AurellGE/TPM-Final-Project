@@ -77,6 +77,10 @@ button:hover {
     cursor: pointer;
 }
 
+label:hover {
+    cursor: pointer;
+}
+
 li {
     list-style: none;
 }
@@ -291,14 +295,16 @@ body {
     padding-inline: 5px;
 }
 
-.delete {
-    background-color: transparent;
-    border: none;
-    width: 100%;
+.square-delete {
+    height: 85px; width: 85px;
+    margin-bottom: 5px;
 }
 
-.delete > img {
-    margin-left: 80%;
+.delete {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    margin-left: 90px;
 }
 
 ._line_ {
@@ -469,12 +475,21 @@ input {
 }
 
 #participant button {
-    width: 90px;
+    width: 75px;
     font-weight: 600;
     padding-block: 3px;
     background-color: #C4C4C4;
     border: none; border-radius: 7px;
     margin-block: 10px; margin-right: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons-b {
+    width: 280px !important;
 }
 
 #participant label, p {
@@ -491,13 +506,12 @@ input {
 }
 
 .part-left {
-}
-
-.part-left {
-    width: 100%;
-    /* background-color: salmon; */
     border-radius: 26px;
     padding: 20px 30px;
+}
+
+.part-left > div > div {
+    width: 300px;
 }
 
 .part-right {
@@ -527,7 +541,7 @@ input {
 #team-edit {
     position: fixed;
     padding: 20px;
-    top: 170px; right: 30px;
+    top: 70px; right: 30px;
     width: 250px;
     border-radius: 26px;
     background-color: white;

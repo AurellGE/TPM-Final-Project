@@ -387,6 +387,16 @@ input {
     opacity: 0;
 }
 
+#pay-upload button {
+    width: 90px;
+    font-weight: 600;
+    padding-block: 3px;
+    background-color: #EAEAEA;
+    color: #616161;
+    border: none; border-radius: 7px;
+    margin-bottom: 15px; margin-right: 15px;
+}
+
 #pay-verified {
     background-color: white;
     border-radius: 26px;

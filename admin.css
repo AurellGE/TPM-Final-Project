@@ -489,7 +489,7 @@ input {
 }
 
 .buttons-b {
-    width: 280px !important;
+    width: 110px !important;
 }
 
 #participant label, p {
@@ -511,7 +511,7 @@ input {
 }
 
 .part-left > div > div {
-    width: 300px;
+    width: 475px;
 }
 
 .part-right {

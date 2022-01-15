@@ -53,15 +53,26 @@ body {
     transform: translateY(60px);
   }
 }
+
+.logo {
+  position: fixed;
+  float: left;
+  margin-left: 20px; margin-top: 2px;
+  height: 60px;
+  z-index: 120;
 }
 
 p {
   font-size: 14px;
 }
 
+ul > li:hover {
+  cursor: pointer;
+}
+
 nav {
   z-index: 10;
-  position: sticky;
+  position: fixed;
   float: right;
   text-align: right;
   top: 0;
@@ -141,7 +152,7 @@ h1 > span {
   text-decoration: none;
 }
 
-.orange-button span,button {
+.orange-button > span,button {
   font-family: "monument_extendedregular";
   padding: 8px 15px; padding-left: 20px;
   border: none;
@@ -508,16 +519,20 @@ video {
   padding-top: 70px;
 }
 
+#mentor button {
+  /* bor */
+}
+
 #mentor > h1 {
   text-align: center;
 }
 
-#mentor > ul {
+#mentor ul {
   text-align: center;
   padding: 10px;
 }
 
-#mentor > ul > li {
+#mentor li {
   display: inline;
   font-size: 16px;
   padding: 25px;
@@ -587,6 +602,14 @@ video {
   text-align: center;
 }
 
-.technology, .business {
+.design {
+  display: flex;
+}
+
+.technology {
+  display: none;
+}
+
+.business {
   display: none;
 }

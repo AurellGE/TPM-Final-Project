@@ -72,8 +72,8 @@
         <img class="bg-bubble bg-2" src="./Assets/Background/home-bb2.png" alt="">
         <img class="bg-bubble bg-3" src="./Assets/Background/home-bb3.png" alt="">
     </div>
+    <a href="#home"><img class="logo" src="./Assets/logo.png" alt=""></a>
     <nav>
-        <a href="#home"><h3>Hackathon 5.0</h3></a>
         <ul class="navbar">
             <!-- <li><a href="#home">Home</a></li> -->
             <li><a href="#about">About</a></li>
@@ -253,12 +253,13 @@
     <section id="mentor">
         <h1>OUR MENTOR</h1>
         <ul>
-            <li>Design</li>
-            <li>Technology</li>
-            <li>Business</li>
+            <!-- onclick="switchMentor()" -->
+            <li onclick="switchDesign()" id="design-btn">Design</li>
+            <li onclick="switchTech()" id="technology-btn">Technology</li>
+            <li onclick="switchBusi()" id="business-btn">Business</button></li>
         </ul>
         <div class="mentor-design">
-            <div class="design">
+            <div id="design" class="design">
                 <div class="design1">
                     <img src="./Assets/Home/mentor-1.png" alt="">
                     <div>
@@ -281,46 +282,46 @@
                     <p class="mentor-p">CEO of Canva Global and founder of ART.IO</p>
                 </div>
             </div>
-            <div class="design technology">
+            <div id="technology" class="design technology">
                 <div class="design1">
-                    <img src="./Assets/Home/mentor-1.png" alt="">
+                    <img src="./Assets/Home/mentor-4.png" alt="">
                     <div>
                         <span class="design-name">Susan Warning</span>
                     </div>
                     <p class="mentor-p">CEO of Youtube Global and founder of Coding Asia</p>
                 </div>
                 <div class="design2">
-                    <img src="./Assets/Home/mentor-2.png" alt="">
+                    <img src="./Assets/Home/mentor-5.png" alt="">
                     <div>
                         <span class="design-name">Dafeed Man</span>
                     </div>
                     <p class="mentor-p">Senior Software enginer at NASA Global </p>
                 </div>
                 <div class="design3">
-                    <img src="./Assets/Home/mentor-3.png" alt="">
+                    <img src="./Assets/Home/mentor-6.png" alt="">
                     <div>
                         <span class="design-name">Kimberly Victoria</span>
                     </div>
                     <p class="mentor-p">CEO of Canva Global and founder of ART.IO</p>
                 </div>
             </div>
-            <div class="design business">
+            <div id="business" class="design business">
                 <div class="design1">
-                    <img src="./Assets/Home/mentor-1.png" alt="">
+                    <img src="./Assets/Home/mentor-7.png" alt="">
                     <div>
                         <span class="design-name">Susan Warning</span>
                     </div>
                     <p class="mentor-p">CEO of Youtube Global and founder of Coding Asia</p>
                 </div>
                 <div class="design2">
-                    <img src="./Assets/Home/mentor-2.png" alt="">
+                    <img src="./Assets/Home/mentor-8.png" alt="">
                     <div>
                         <span class="design-name">Dafeed Man</span>
                     </div>
                     <p class="mentor-p">Senior Software enginer at NASA Global </p>
                 </div>
                 <div class="design3">
-                    <img src="./Assets/Home/mentor-3.png" alt="">
+                    <img src="./Assets/Home/mentor-9.png" alt="">
                     <div>
                         <span class="design-name">Kimberly Victoria</span>
                     </div>
@@ -445,7 +446,7 @@
 
 
     <!-- FAQ -->
-    <section class="faq section">
+    <section id="faq" class="faq section">
         <div class="container">
             <div class="container-items">
                 <div class="header">
@@ -688,35 +689,35 @@
             <div class='footer-icons'>
                 <a href="">
                     <div class="icon-container">
-                        <span class="iconify" data-icon="carbon:email"></span>
+                        <img src="./Assets/Footer/email.png" alt="">
                     </div>
                 </a>
                
                 <a href="https://www.instagram.com/bnccbinus/">
                     <div class="icon-container">
-                        <span class="iconify" data-icon="akar-icons:instagram-fill"></span>
+                        <img src="./Assets/Footer/ig.png" alt="">
                     </div>
                 </a>
                
                 <a href="https://twitter.com/bncc_binus">
                     <div class="icon-container">
-                        <span class="iconify" data-icon="brandico:twitter"></span>
+                        <img src="./Assets/Footer/tumblr.png" alt="">
                     </div>
                 </a>
                
                 <a href="https://www.facebook.com/bina.nusantara.computer.club">
                     <div class="icon-container">
-                        <span class="iconify" data-icon="akar-icons:facebook-fill"></span>
+                        <img src="./Assets/Footer/fb.png" alt="">
                     </div>
                 </a>
                
                 <a href="https://id.linkedin.com/company/bina-nusantara-computer-club">
                     <div class="icon-container">
-                        <span class="iconify" data-icon="akar-icons:linkedin-fill"></span>
+                        <img src="./Assets/Footer/in.png" alt="">
                     </div>
                 </a>
             </div>
-            <h3>Hackathon 5.0</h3>
+            <img class="contact-logo" src="./Assets/logo.png" alt="">
         </div>
        
         <p class='bold'>All Right Reserved BNCC 2022 © Bina Nusantara Computer Club</p>

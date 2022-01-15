@@ -59,3 +59,87 @@ document.addEventListener("DOMContentLoaded", function() {
            alert("There was an error")
        }
    }
+
+
+// Mentor
+function switchMentor() {
+
+    // document.getElementById("design").style.display = "block";
+    // document.getElementById("technology").style.display = "block";
+    // document.getElementById("business").style.display = "block";
+
+
+    // if (document.getElementById('design') !== undefined) {
+    //     if (document.getElementById('design').style.display == 'none') {
+    //         document.getElementById('design').style.display = 'flex';
+    //         document.getElementById('technology').style.display = 'none';
+    //         document.getElementById('business').style.display = 'none';
+    //     }
+    //     else if (document.getElementById('technology').style.display == 'none') {
+    //         document.getElementById('design').style.display = 'none';
+    //         document.getElementById('technology').style.display = 'flex';
+    //         document.getElementById('business').style.display = 'none';
+    //     }
+    //     else if (document.getElementById('business').style.display == 'none') {
+    //         document.getElementById('design').style.display = 'none';
+    //         document.getElementById('technology').style.display = 'none';
+    //         document.getElementById('business').style.display = 'flex';
+    //     }
+    // }
+
+    // if (document.getElementById('technology') !== undefined) {
+    //     if (document.getElementById('design').style.display == 'none') {
+    //         document.getElementById('design').style.display = 'block';
+    //         document.getElementById('technology').style.display = 'none';
+    //         document.getElementById('business').style.display = 'none';
+    //     }
+    //     else if (document.getElementById('technology').style.display == 'none') {
+    //         document.getElementById('design').style.display = 'none';
+    //         document.getElementById('technology').style.display = 'flex';
+    //         document.getElementById('business').style.display = 'none';
+    //     }
+    //     else if (document.getElementById('business').style.display == 'none') {
+    //         document.getElementById('design').style.display = 'none';
+    //         document.getElementById('technology').style.display = 'none';
+    //         document.getElementById('business').style.display = 'flex';
+    //     }
+    // }
+
+    // if (document.getElementById('business') !== undefined) {
+    //     if (document.getElementById('design').style.display == 'none') {
+    //         document.getElementById('design').style.display = 'flex';
+    //         document.getElementById('technology').style.display = 'none';
+    //         document.getElementById('business').style.display = 'none';
+    //     }
+    //     else if (document.getElementById('technology').style.display == 'none') {
+    //         document.getElementById('design').style.display = 'none';
+    //         document.getElementById('technology').style.display = 'flex';
+    //         document.getElementById('business').style.display = 'none';
+    //     }
+    //     else if (document.getElementById('business').style.display == 'none') {
+    //         document.getElementById('design').style.display = 'none';
+    //         document.getElementById('technology').style.display = 'none';
+    //         document.getElementById('business').style.display = 'flex';
+    //     }
+    // }
+
+
+}
+
+function switchDesign() {
+    document.getElementById("design").style.display == "flex"
+    document.getElementById("technology").style.display == "none"
+    document.getElementById("business").style.display == "none"
+}
+
+function switchTech() {
+    document.getElementById("design").style.display == "none"
+    document.getElementById("technology").style.display == "flex"
+    document.getElementById("business").style.display == "none"
+}
+
+function switchBusi() {
+    document.getElementById("design").style.display == "none"
+    document.getElementById("technology").style.display == "none"
+    document.getElementById("business").style.display == "flex"
+}
